@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional personal portfolio website. About, skills, projects and contact information.">
+  <title>Dictael | Web Developer Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="Dictael home">DictaelWebStudio<span>.</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open navigation">☰</button>
+      <ul id="nav-menu" class="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">FULL-STACK WEB DEVELOPER</p>
+          <h1>Building clean, useful and responsive web experiences.</h1>
+          <p class="hero-text">I design and build modern websites and web applications with a focus on usability, accessibility and practical results.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn secondary" href="#contact">Contact Me</a>
+          </div>
+        </div>
+        <div class="hero-card" aria-label="Developer profile summary">
+          <div class="avatar">D</div>
+          <h2>Dictael</h2>
+          <p>Web Developer · UI Builder · Problem Solver</p>
+          <div class="mini-stats">
+            <span><strong>3+</strong> Projects</span>
+            <span><strong>HTML</strong> CSS JS</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container narrow">
+        <p class="section-label">ABOUT</p>
+        <h2>Turning ideas into working websites.</h2>
+        <p>I am a web development student and aspiring full-stack developer who enjoys creating simple, responsive and easy-to-use digital products. I work with front-end technologies and am developing my back-end skills through practical projects.</p>
+        <p>My approach is straightforward: understand the problem, plan the interface, build clean code, test it on different screen sizes, and improve the user experience.</p>
+      </div>
+    </section>
+
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <p class="section-label">SKILLS</p>
+        <h2>Tools I use</h2>
+        <div class="skills-grid">
+          <article class="skill-card"><span>01</span><h3>HTML5</h3><p>Semantic page structure, forms and accessible content.</p></article>
+          <article class="skill-card"><span>02</span><h3>CSS3</h3><p>Responsive layouts, animations, grids and reusable components.</p></article>
+          <article class="skill-card"><span>03</span><h3>JavaScript</h3><p>Interactive interfaces, validation, API calls and DOM manipulation.</p></article>
+          <article class="skill-card"><span>04</span><h3>Git & GitHub</h3><p>Version control, repositories and project deployment workflows.</p></article>
+          <article class="skill-card"><span>05</span><h3>PHP / Node.js</h3><p>Server-side fundamentals and REST API development.</p></article>
+          <article class="skill-card"><span>06</span><h3>MySQL</h3><p>Relational database design, queries and CRUD operations.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <p class="section-label">PROJECTS</p>
+        <h2>Selected work</h2>
+        <div class="projects-grid">
+          <article class="project-card"><div class="project-number">01</div><h3>Task Manager</h3><p>A full-stack task management application with authentication, CRUD operations, filtering and MySQL storage.</p><div class="tags"><span>Node.js</span><span>Express</span><span>MySQL</span></div></article>
+          <article class="project-card"><div class="project-number">02</div><h3>Mini E-Commerce</h3><p>A responsive product catalogue with search, category filtering, shopping cart and API-powered product data.</p><div class="tags"><span>JavaScript</span><span>REST API</span><span>CSS</span></div></article>
+          <article class="project-card"><div class="project-number">03</div><h3>Campus Web Project</h3><p>A responsive information website designed to make important campus resources easier to discover.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section section-alt">
+      <div class="container contact-grid">
+        <div>
+          <p class="section-label">CONTACT</p>
+          <h2>Let's build something useful.</h2>
+          <p>Have a project, internship opportunity or question? Send a message using the form. The form validates your details and prepares an email message for submission.</p>
+          <div class="contact-details">
+            <p><strong>Email:</strong> <a href="mailto:your-email@example.com">benedictabadioo983@gmail.com</a></p>
+            <p><strong>Location:</strong> Western Region,Ghana.</p>
+          </div>
+        </div>
+        <form id="contact-form" class="contact-form" novalidate>
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required minlength="2" placeholder="Your name">
+          <small class="error" data-error-for="name"></small>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com">
+          <small class="error" data-error-for="email"></small>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required minlength="10" placeholder="Tell me about your project..."></textarea>
+          <small class="error" data-error-for="message"></small>
+          <button class="btn primary" type="submit">Send Message</button>
+          <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container"><p>© <span id="year"></span> Dictael. Built with HTML, CSS and JavaScript.</p><a href="#home">Back to top ↑</a></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
